@@ -1,0 +1,395 @@
+body{
+	font-family: "Times New Roman";
+}
+
+#a1:link {
+    color: white;
+    background-color: transparent;
+    text-decoration: none;
+}
+#a1:visited {
+    color: white;
+    background-color: transparent;
+    text-decoration: none;
+}
+#a1:hover {
+    color: white;
+    background-color: transparent;
+    text-decoration: underline;
+}
+#a1:active {
+    color: white;
+    background-color: transparent;
+    text-decoration: underline;
+}
+
+#row_log {
+	background-color: #c4261d;
+	color: white;
+	margin-top: 1px;
+}
+
+nav.navbar {
+	background-color: #c4261d;
+	border-color: #c4261d;
+	color: white;	
+}
+
+#register{
+	color: red;
+	size:30px;
+}
+
+#a2:link {
+    color: white;
+    background-color: transparent;
+    text-decoration: none;
+}
+#a2:visited {
+    color: white;
+    background-color: transparent;
+    text-decoration: none;
+}
+#a2:hover {
+    color: white;
+    background-color: #e2443c;
+	border-color: #e2443c;
+    text-decoration: none;
+}
+#a2:active {
+    color: white;
+    background-color: #e2443c;
+	border-color: #e2443c;
+    text-decoration: none;
+}
+
+
+.carousel-inner > .item > img,
+  .carousel-inner > .item > a > img {
+      width: 70%;
+	  height: 500px;
+      margin: auto;
+  }
+
+#pn {
+	text-align: center;
+}
+
+#pc {
+	text-align:left; 
+	margin-left: 15px
+}
+
+#bg {
+	background-color: transparent;
+	border-radius: 100%;
+	outline-color: transparent;
+}
+
+#news{
+	text-align: center;
+	background-color: white;
+    width:600px;
+	height:165px;
+    padding: 5px;
+    border: 2px white;
+    margin: auto;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+#box {
+	background-color: white;
+    width:800px;
+	height:215px;
+    padding: 5px;
+    border: 2px white;
+    margin: auto;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+#starblock {
+	display: flex;
+	display: -webkit-flex;
+	flex-direction: column;
+	-webkit-flex-direction: column;
+	padding: 20px 0;
+	margin: 0 auto;
+    display: inline-block;
+    overflow: hidden;
+	
+}
+
+.error {
+	color:red;
+}
+
+#buttonform {
+    position: relative;
+    background-color: #c4261d;
+    border: none;
+    font-size: 14px;
+    color: #FFFFFF;
+    padding: 20px;
+    max-width: 200px;
+    text-align: center;
+    text-decoration: none;
+    overflow: hidden;
+    cursor: pointer;
+	border-radius:10%;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	outline-color: transparent;
+}
+
+#btnbox {
+	background-color: #c4261d;
+    border: none;
+    font-size: 14px;
+    color: #FFFFFF;
+	text-align: center;
+	cursor: pointer;
+	border-bottom-right-radius: 2em;
+	border-top-right-radius: 2em;
+	border-bottom-left-radius: 2em;
+	border-top-left-radius: 2em;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	outline-color: transparent;
+	padding: 5px;
+}
+
+#btdrop {
+	border: none;
+	background-color: transparent;
+	outline-color: transparent;
+}
+
+section#gallery figure {
+    float:left;
+    display:inline;
+    width:23%;
+    margin:1%; /*2% + 21% + 2% = 25% */
+}
+
+ 
+section#gallery a:hover { 
+    opacity:0.6;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=60)"; /* IE 8 hack */
+    filter: alpha(opacity = 60); /* IE 5-7 hack */
+} 
+ 
+section#gallery img { 
+    width:100%;
+    display:block;
+    border:none;
+    -ms-interpolation-mode:bicubic; /* IE 7+ hack */
+}
+
+
+/* Style the Image Used to Trigger the Modal */
+.imgGallery {
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.imgGallery:hover {opacity: 0.7;}
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+}
+
+/* Modal Content (Image) */
+.modal-content {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+}
+
+/* Caption of Modal Image (Image Text) - Same Width as the Image */
+#caption {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+    color: #ccc;
+    padding: 10px 0;
+    height: 150px;
+}
+
+/* Add Animation - Zoom in the Modal */
+.modal-content, #caption { 
+    -webkit-animation-name: zoom;
+    -webkit-animation-duration: 0.6s;
+    animation-name: zoom;
+    animation-duration: 0.6s;
+}
+
+@-webkit-keyframes zoom {
+    from {-webkit-transform:scale(0)} 
+    to {-webkit-transform:scale(1)}
+}
+
+@keyframes zoom {
+    from {transform:scale(0)} 
+    to {transform:scale(1)}
+}
+
+/* The Close Button */
+.close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 700px){
+    .modal-content {
+        width: 100%;
+    }
+}
+
+#footer {
+	background-color: #c4261d;
+	border-color: #c4261d;
+	color: white;
+	padding: 15px;
+}
+
+#btdrop {
+	height: 100%;
+	color: black;
+    background-color: white;
+}
+
+#btu {
+    height: 100%;
+	color: white;
+    background-color: #c4261d;
+    border-color: transparent;
+	outline-color: transparent;
+}
+
+#btu:hover {
+    color: white;
+    background-color: #e2443c;
+	border-color: #e2443c;
+    text-decoration: none;
+	}
+	
+#dpd {
+	
+}
+
+#btug {
+    height: 100%;
+	color: white;
+    background-color: #c4261d;
+	border-bottom-right-radius: 2em;
+	border-top-right-radius: 2em;
+    
+}
+
+
+.buttonform {
+    position: relative;
+    background-color: #c4261d;
+    border: none;
+    font-size: 14px;
+    color: #FFFFFF;
+    padding: 20px;
+    max-width: 200px;
+    text-align: center;
+    text-decoration: none;
+    overflow: hidden;
+    cursor: pointer;
+	border-radius:10%;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	outline-color: transparent;
+}
+
+table {
+	width:100%;
+	
+}
+
+table, th, td {
+	border: 1px solid transparent;
+	border-collapse: collapse;
+	
+}
+
+th, td {
+	padding: 5px;
+	text-align:center;
+}
+
+table#t01 tr:nth-child(even) {
+	background-color: #eee;
+	padding: 10px;
+}
+
+table#t01 tr:nth-child(odd) {
+	background-color:#fff;
+	padding: 10px;
+}
+
+table#t01 th {
+	background-color: #c4261d;
+	color: white;
+	padding: 10px;
+}
+
+
+#iframe{
+	width:100%;
+	height:400px;
+	float: left;
+	border: none;
+	
+}
+
+.badge{
+  background-color:#000;
+  color:#fff;
+  display:inline-block;
+  padding-left:8px;
+  padding-right:8px;
+  text-align:center;
+  border-radius:50%;
+  color:#c4261d;
+  background-color:#ffffff;
+ }
+
+ input{
+	 
+	 border: 2px solid grey; 
+	 border-radius: 10px; 
+	 outline-color: transparent;
+	 
+	 
+	 
+ }
+ 
